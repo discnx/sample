@@ -1,0 +1,29 @@
+<style>
+.watermark {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: relative;
+  background:yellow;
+  opacity:0.6;
+}
+
+.watermark::after {
+  content: "";
+ background:url(https://www.google.co.in/images/srpr/logo11w.png) no-repeat;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  width:50%;
+}
+</style>
+  
+  
+<div class="watermark">
+    <div class="col-md-12">Something else</div>
+    <div class="col-md-12">Something more..</div>
+    <div class="col-md-12">Something at the end</div>
+</div>
